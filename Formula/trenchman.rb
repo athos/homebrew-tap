@@ -32,7 +32,7 @@ class Trenchman < Formula
   end
 
   def install
-    bin.install "trenchman"
+    bin.install "trench"
   end
 
   test do
