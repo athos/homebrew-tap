@@ -5,29 +5,29 @@
 class Trenchman < Formula
   desc "A standalone nREPL/prepl client written in Go, heavily inspired by Grenchman"
   homepage "https://github.com/athos/trenchman"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/athos/trenchman/releases/download/v0.2.0/trenchman_0.2.0_macos_amd64.tar.gz"
-      sha256 "4d1d0d357a6c42259749402b82e4092b530128dec17314a9fba1eedb1149991c"
+      url "https://github.com/athos/trenchman/releases/download/v0.3.0/trenchman_0.3.0_macos_amd64.tar.gz"
+      sha256 "98840597abffff3be9dbb742780eaa9f5b912b548dd596419fc6a84a0d552314"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/athos/trenchman/releases/download/v0.2.0/trenchman_0.2.0_macos_arm64.tar.gz"
-      sha256 "acd4f98e6f82ff09eec7c6f981a381d0f4f6857830a33240b2f615ba6edb2d90"
+      url "https://github.com/athos/trenchman/releases/download/v0.3.0/trenchman_0.3.0_macos_arm64.tar.gz"
+      sha256 "50cd6e742d1dbce0592e6b817b8ab1a518cb193aee67c98086c6f9234781528c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/athos/trenchman/releases/download/v0.2.0/trenchman_0.2.0_linux_amd64.tar.gz"
-      sha256 "1594425c3ba3c86f7bb9afa0fe4ec198d6404a35a62a630552a8536dbdf5f698"
+      url "https://github.com/athos/trenchman/releases/download/v0.3.0/trenchman_0.3.0_linux_amd64.tar.gz"
+      sha256 "0c46bfdd369c60584d3ff2669d5421b30c5c244d92606782655de551baf912b4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/athos/trenchman/releases/download/v0.2.0/trenchman_0.2.0_linux_arm64.tar.gz"
-      sha256 "f91c3b6618d23c533cc9f1c590025a7d075b87ff9d093092e0470ce59bff7bf9"
+      url "https://github.com/athos/trenchman/releases/download/v0.3.0/trenchman_0.3.0_linux_arm64.tar.gz"
+      sha256 "3ff7223a81b8161b6196d107a0249a456c1cf887c20cb2a0d1f0fb0af086afd5"
     end
   end
 
